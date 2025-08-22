@@ -22,10 +22,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400 mb-4">
-              © 2024 John Doe. All rights reserved.
+              © 2024 Amit Prakash. All rights reserved.
             </p>
             <p className="text-gray-500 text-sm">
-              Built with passion for clean code and modern web technologies.
             </p>
           </div>
         </div>

@@ -5,8 +5,8 @@ export default function ContactSection() {
     {
       icon: Mail,
       label: "Email",
-      value: "Johndoe@gmail.com",
-      href: "mailto:Johndoe@gmail.com",
+      value: "amit69091@gmail.com",
+      href: "mailto:amit69091@gmail.com",
       color: "text-dark-accent",
       bgColor: "bg-dark-accent/20",
       target: "_self"
@@ -14,8 +14,8 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: "Phone",
-      value: "+91 97382 462834",
-      href: "tel:+9197382462834",
+      value: "+91 94722 00612",
+      href: "tel:+919472200612",
       color: "text-dark-success",
       bgColor: "bg-dark-success/20",
       target: "_self"
@@ -24,7 +24,7 @@ export default function ContactSection() {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect with me",
-      href: "http://linkedin.com/",
+      href: "www.linkedin.com/in/amitpr28",
       color: "text-blue-400",
       bgColor: "bg-blue-500/20",
       target: "_blank"
@@ -32,7 +32,7 @@ export default function ContactSection() {
     {
       icon: MapPin,
       label: "Location",
-      value: "Sydney, Australia",
+      value: "Bangalore, India",
       href: null,
       color: "text-purple-400",
       bgColor: "bg-purple-500/20",
@@ -47,8 +47,7 @@ export default function ContactSection() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="contact-title">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-dark-accent to-dark-success mx-auto"></div>
           <p className="text-gray-400 mt-6 max-w-2xl mx-auto" data-testid="contact-description">
-            I'm always interested in hearing about new opportunities and challenging projects. 
-            Let's connect and discuss how we can work together.
+          Got an exciting project or opportunity? Let’s connect and make it happen.
           </p>
         </div>
 

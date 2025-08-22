@@ -18,7 +18,7 @@ export default function HeroSection() {
         <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between">
           <div className="lg:w-2/3">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" data-testid="hero-title">
-              Hi, I'm <span className="gradient-text">John Doe</span>
+              Hi, I'm <span className="gradient-text">Amit Prakash</span>
             </h1>
             <h2 className="text-xl sm:text-2xl text-gray-300 mb-6 font-medium" data-testid="hero-subtitle">
               Java Backend Developer
@@ -38,8 +38,8 @@ export default function HeroSection() {
                 View My Work
               </button>
               <a
-                href="https://ontheline.trincoll.edu/images/bookdown/sample-local-pdf.pdf"
-                download="John_Doe_Resume.pdf"
+                href="https://drive.google.com/file/d/1rzXy92IuN8E0JtZa_7r5tasCvCxm41as/view?usp=drive_link"
+                download="Amit_Prakash_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="gradient-border inline-flex items-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
@@ -63,8 +63,8 @@ export default function HeroSection() {
               {/* Profile image placeholder with modern styling */}
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border border-gray-700/50 relative overflow-hidden group" data-testid="profile-image">
                 <img 
-                  src="https://static.vecteezy.com/system/resources/previews/005/346/410/non_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg"
-                  alt="John Doe - Java Backend Developer"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQGrXTap5j1Q_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703511655436?e=1758758400&v=beta&t=HGsQghjQIAZxSghCBJ5ZFLZdwjY9bqjmMbCnQXDXB7U"
+                  alt="Amit Prakash - Java Backend Developer"
                   className="w-full h-full object-cover"
                 />
                 {/* Subtle animated border */}
