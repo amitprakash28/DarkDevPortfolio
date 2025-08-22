@@ -1,5 +1,5 @@
 import { Briefcase, Mail, User, Download } from "lucide-react";
-import meImage from '../assets/me.jpg'; // Adjust the path based on your file structure
+import meImage from '../assets/me.jpeg';
 
 
 export default function HeroSection() {
