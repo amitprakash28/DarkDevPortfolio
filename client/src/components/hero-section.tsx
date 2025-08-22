@@ -63,7 +63,7 @@ export default function HeroSection() {
               {/* Profile image placeholder with modern styling */}
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border border-gray-700/50 relative overflow-hidden group" data-testid="profile-image">
                 <img 
-                  src="https://media.licdn.com/dms/image/v2/D5603AQGrXTap5j1Q_g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703511655436?e=1758758400&v=beta&t=HGsQghjQIAZxSghCBJ5ZFLZdwjY9bqjmMbCnQXDXB7U"
+                  src="https://drive.google.com/file/d/13Zu1oUm-9kxxoL0mNiQ6P_8WLkLHSe1c/view?usp=sharing"
                   alt="Amit Prakash - Java Backend Developer"
                   className="w-full h-full object-cover"
                 />

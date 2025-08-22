@@ -53,7 +53,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold gradient-text" data-testid="logo">John Doe</span>
+            <span className="text-xl font-bold gradient-text" data-testid="logo">Amit Prakash</span>
           </div>
 
           {/* Desktop Navigation */}

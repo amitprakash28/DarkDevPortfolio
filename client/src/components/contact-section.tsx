@@ -24,7 +24,7 @@ export default function ContactSection() {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Connect with me",
-      href: "www.linkedin.com/in/amitpr28",
+      href: "https://www.linkedin.com/in/amitpr28/",
       color: "text-blue-400",
       bgColor: "bg-blue-500/20",
       target: "_blank"
