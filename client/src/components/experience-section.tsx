@@ -73,23 +73,34 @@ export default function ExperienceSection() {
                 </div>
                 <div className="mt-4 lg:mt-0">
 
-                  <span
-  className={`inline-flex items-center px-4 py-[7px] rounded-lg font-medium ${
+       <span
+  className={`inline-flex items-center px-4 py-2 rounded-lg font-medium relative ${
     exp.current
-      ? "text-white bg-dark-tertiary border border-transparent bg-gradient-to-r from-dark-accent to-dark-success [background-origin:border-box] [background-clip:padding-box,border-box]"
+      ? "text-white"
       : "bg-dark-border text-gray-300"
   }`}
   data-testid={`experience-period-${index}`}
 >
-                    {exp.current ? (
-                      <div className="w-6 h-6 bg-green-500/30 rounded-full flex items-center justify-center mr-2">
-                        <Calendar className="w-3 h-3 text-green-400" />
-                      </div>
-                    ) : (
-                      <Calendar className="w-4 h-4 mr-2" />
-                    )}
-                    {exp.period}
-                  </span>
+  {exp.current && (
+    <span className="absolute inset-0 rounded-lg p-[1px] bg-gradient-to-r from-dark-accent to-dark-success">
+      <span className="block h-full w-full rounded-lg bg-dark-tertiary"></span>
+    </span>
+  )}
+
+  <span className="relative flex items-center">
+    {exp.current ? (
+      <div className="w-6 h-6 bg-green-500/30 rounded-full flex items-center justify-center mr-2">
+        <Calendar className="w-3 h-3 text-green-400" />
+      </div>
+    ) : (
+      <Calendar className="w-4 h-4 mr-2" />
+    )}
+    {exp.period}
+  </span>
+</span>
+
+
+
                 </div>
               </div>
               <ul className="space-y-4 text-gray-300 text-base leading-relaxed font-light">
