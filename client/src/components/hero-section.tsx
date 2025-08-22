@@ -1,4 +1,6 @@
 import { Briefcase, Mail, User, Download } from "lucide-react";
+import meImage from '../assets/me.jpg'; // Adjust the path based on your file structure
+
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -63,7 +65,7 @@ export default function HeroSection() {
               {/* Profile image placeholder with modern styling */}
               <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border border-gray-700/50 relative overflow-hidden group" data-testid="profile-image">
                 <img 
-                  src="https://drive.google.com/uc?export=view&id=13Zu1oUm-9kxxoL0mNiQ6P_8WLkLHSe1c"
+                  src={meImage}
                   alt="Amit Prakash - Java Backend Developer"
                   className="w-full h-full object-cover"
                 />
