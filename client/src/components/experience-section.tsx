@@ -72,11 +72,15 @@ export default function ExperienceSection() {
                   <p className="text-gray-400" data-testid={`experience-location-${index}`}>{exp.location}</p>
                 </div>
                 <div className="mt-4 lg:mt-0">
-                  <span className={`inline-flex items-center px-4 py-2 rounded-lg font-medium ${
-                    exp.current 
-                      ? "bg-dark-tertiary text-white border border-green-500/50" 
-                      : "bg-dark-border text-gray-300"
-                  }`} data-testid={`experience-period-${index}`}>
+
+                  <span
+  className={`inline-flex items-center px-4 py-[7px] rounded-lg font-medium ${
+    exp.current
+      ? "text-white bg-dark-tertiary border border-transparent bg-gradient-to-r from-dark-accent to-dark-success [background-origin:border-box] [background-clip:padding-box,border-box]"
+      : "bg-dark-border text-gray-300"
+  }`}
+  data-testid={`experience-period-${index}`}
+>
                     {exp.current ? (
                       <div className="w-6 h-6 bg-green-500/30 rounded-full flex items-center justify-center mr-2">
                         <Calendar className="w-3 h-3 text-green-400" />
