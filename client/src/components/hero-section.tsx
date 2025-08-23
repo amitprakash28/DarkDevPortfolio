@@ -46,9 +46,7 @@ export default function HeroSection() {
           Passionate about performance, security, and maintainability.<br />
           I’m driven by innovative projects in cloud-native solutions and AI integration.
         </p>
-        {/* <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start text-center sm:text-left"> */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start sm:text-center lg:text-left">
-
+        <div className="flex flex-col sm:flex-row gap-4 justify-center sm:items-center lg:items-start">
           <button
             onClick={() => scrollToSection("experience")}
             className="gradient-border inline-flex items-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
