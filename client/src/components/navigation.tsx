@@ -7,7 +7,7 @@ export default function Navigation() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "skills", "experience", "education", "contact"];
+      const sections = ["hero", "skills", "experience", "education", "contact"];
       const scrollY = window.pageYOffset;
 
       sections.forEach(sectionId => {
@@ -40,7 +40,7 @@ export default function Navigation() {
   };
 
   const navItems = [
-    // { id: "about", label: "About" },
+    { id: "hero", label: "About" },
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "education", label: "Education" },
