@@ -43,78 +43,74 @@ export default function ExperienceSection() {
     }
   ];
 
-  return (
-    <section id="experience" className="py-20 bg-dark-secondary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="experience-title">Work Experience</h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-dark-accent to-dark-success mx-auto"></div>
-        </div>
-
-        <div className="space-y-12">
-          {experiences.map((exp, index) => (
-            <div key={index} className="bg-dark-primary rounded-xl p-8 lg:p-12 card-hover border border-dark-border" data-testid={`experience-${index}`}>
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2" data-testid={`experience-title-${index}`}>{exp.title}</h3>
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="text-lg font-semibold text-dark-accent" data-testid={`experience-company-${index}`}>{exp.company}</h4>
-                    <a 
-                      href={exp.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-dark-accent transition-colors duration-200"
-                      data-testid={`experience-company-link-${index}`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </div>
-                  <p className="text-gray-400" data-testid={`experience-location-${index}`}>{exp.location}</p>
-                </div>
-                <div className="mt-4 lg:mt-0">
-
-       <span
-  className={`inline-flex items-center px-4 py-2 rounded-lg font-medium relative ${
-    exp.current
-      ? "text-white"
-      : "bg-dark-border text-gray-300"
-  }`}
-  data-testid={`experience-period-${index}`}
->
-  {exp.current && (
-    <span className="absolute inset-0 rounded-lg p-[1px] bg-gradient-to-r from-dark-accent to-dark-success">
-      <span className="block h-full w-full rounded-lg bg-dark-tertiary"></span>
-    </span>
-  )}
-
-  <span className="relative flex items-center">
-    {exp.current ? (
-      <div className="w-6 h-6 bg-green-500/30 rounded-full flex items-center justify-center mr-2">
-        <Calendar className="w-3 h-3 text-green-400" />
+return (
+  <section id="experience" className="py-20 bg-dark-secondary">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4" data-testid="experience-title">Work Experience</h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-dark-accent to-dark-success mx-auto"></div>
       </div>
-    ) : (
-      <Calendar className="w-4 h-4 mr-2" />
-    )}
-    {exp.period}
-  </span>
-</span>
 
-
-
+      <div className="space-y-12">
+        {experiences.map((exp, index) => (
+          <div key={index} className="bg-dark-primary rounded-xl p-8 lg:p-12 card-hover border border-dark-border" data-testid={`experience-${index}`}>
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-2" data-testid={`experience-title-${index}`}>{exp.company}</h3>
+                <div className="flex items-center gap-2 mb-1">
+                  <h4 className="text-lg font-semibold text-dark-accent" data-testid={`experience-company-${index}`}>{exp.title}</h4>
+                  <a 
+                    href={exp.companyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-dark-accent transition-colors duration-200"
+                    data-testid={`experience-company-link-${index}`}
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
                 </div>
+                <p className="text-gray-400" data-testid={`experience-location-${index}`}>{exp.location}</p>
               </div>
-              <ul className="space-y-4 text-gray-300 text-base leading-relaxed font-light">
-                {exp.achievements.map((achievement, achIndex) => (
-                  <li key={achIndex} className="flex items-start" data-testid={`experience-achievement-${index}-${achIndex}`}>
-                    <ChevronRight className="w-5 h-5 text-dark-accent mt-1 mr-3 flex-shrink-0" />
-                    <span className="font-normal tracking-wide">{achievement}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-4 lg:mt-0">
+                <span
+                  className={`inline-flex items-center px-4 py-2 rounded-lg font-medium relative ${
+                    exp.current
+                      ? "text-white"
+                      : "bg-dark-border text-gray-300"
+                  }`}
+                  data-testid={`experience-period-${index}`}
+                >
+                  {exp.current && (
+                    <span className="absolute inset-0 rounded-lg p-[1px] bg-gradient-to-r from-dark-accent to-dark-success">
+                      <span className="block h-full w-full rounded-lg bg-dark-tertiary"></span>
+                    </span>
+                  )}
+
+                  <span className="relative flex items-center">
+                    {exp.current ? (
+                      <div className="w-6 h-6 bg-green-500/30 rounded-full flex items-center justify-center mr-2">
+                        <Calendar className="w-3 h-3 text-green-400" />
+                      </div>
+                    ) : (
+                      <Calendar className="w-4 h-4 mr-2" />
+                    )}
+                    {exp.period}
+                  </span>
+                </span>
+              </div>
             </div>
-          ))}
-        </div>
+            <ul className="space-y-4 text-gray-300 text-base leading-relaxed font-light">
+              {exp.achievements.map((achievement, achIndex) => (
+                <li key={achIndex} className="flex items-start" data-testid={`experience-achievement-${index}-${achIndex}`}>
+                  <ChevronRight className="w-5 h-5 text-dark-accent mt-1 mr-3 flex-shrink-0" />
+                  <span className="font-normal tracking-wide">{achievement}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
