@@ -103,7 +103,8 @@ return (
                 </span>
               </div>
             </div>
-            <ul className="space-y-4 text-gray-300 text-base leading-relaxed font-light">
+
+            <ul className="space-y-4 text-gray-300 text-sm leading-relaxed font-light">
               {exp.achievements.map((achievement, achIndex) => (
                 <li key={achIndex} className="flex items-start" data-testid={`experience-achievement-${index}-${achIndex}`}>
                   <ChevronRight className="w-5 h-5 text-dark-accent mt-1 mr-3 flex-shrink-0" />
@@ -111,6 +112,8 @@ return (
                 </li>
               ))}
             </ul>
+
+
           </div>
         ))}
       </div>
