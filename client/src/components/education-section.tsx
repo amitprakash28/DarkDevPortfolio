@@ -1,6 +1,5 @@
 import { GraduationCap, Trophy, Star, Award, ExternalLink } from "lucide-react";
 
-
 export default function EducationSection() {
   return (
     <section id="education" className="py-20">
@@ -34,50 +33,46 @@ export default function EducationSection() {
             </h3>
 
             <div className="space-y-4">
-  <div
-    className="flex items-start bg-dark-secondary hover:bg-dark-tertiary/50 p-3 rounded-lg transition-colors duration-200"
-    data-testid="award-employee-month"
-  >
-    <Star className="w-5 h-5 text-yellow-500 mt-1 mr-3 flex-shrink-0" />
-    <div className="flex-1">
-      <h4 className="font-semibold text-white flex items-center">
-        Employee of the Month
-        <a
-          href="https://drive.google.com/file/d/1JQSmwSgjfVUI1hByCsFJ1eyr6RM4QQmL/view?usp=drive_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-2 text-gray-400 hover:text-dark-accent transition-colors duration-200"
-        >
-          <ExternalLink className="w-4 h-4" />
-        </a>
-      </h4>
-      <p className="text-gray-400 text-sm mt-2">January 2024</p>
-    </div>
-  </div>
+              <div
+                className="flex items-start justify-between bg-dark-secondary hover:bg-dark-tertiary/50 p-3 rounded-lg transition-colors duration-200"
+                data-testid="award-employee-month"
+              >
+                <div className="flex-1">
+                  <h4 className="font-semibold text-white flex items-center">
+                    Employee of the Month
+                  </h4>
+                  <p className="text-gray-400 text-sm mt-2">January 2024</p>
+                </div>
+                <a
+                  href="https://drive.google.com/file/d/1JQSmwSgjfVUI1hByCsFJ1eyr6RM4QQmL/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-gray-400 hover:text-dark-accent transition-colors duration-200"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
 
-  <div
-    className="flex items-start bg-dark-secondary hover:bg-dark-tertiary/50 p-3 rounded-lg transition-colors duration-200"
-    data-testid="award-fullstack"
-  >
-    <Award className="w-5 h-5 text-dark-success mt-1 mr-3 flex-shrink-0" />
-    <div className="flex-1">
-      <h4 className="font-semibold text-white flex items-center">
-        Full Stack Web Development
-        <a
-          href="https://drive.google.com/file/d/1k_59Ro4dyKRuRGPuV6qOCi1xKi5ruvwO/view?usp=drive_link"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-2 text-gray-400 hover:text-dark-accent transition-colors duration-200"
-        >
-          <ExternalLink className="w-4 h-4" />
-        </a>
-      </h4>
-      <p className="text-gray-400 text-sm mt-2">Professional Certification</p>
-    </div>
-  </div>
-</div>
-
-
+              <div
+                className="flex items-start justify-between bg-dark-secondary hover:bg-dark-tertiary/50 p-3 rounded-lg transition-colors duration-200"
+                data-testid="award-fullstack"
+              >
+                <div className="flex-1">
+                  <h4 className="font-semibold text-white flex items-center">
+                    Full Stack Web Development
+                  </h4>
+                  <p className="text-gray-400 text-sm mt-2">Professional Certification</p>
+                </div>
+                <a
+                  href="https://drive.google.com/file/d/1k_59Ro4dyKRuRGPuV6qOCi1xKi5ruvwO/view?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-2 text-gray-400 hover:text-dark-accent transition-colors duration-200"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
