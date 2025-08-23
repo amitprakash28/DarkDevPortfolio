@@ -17,7 +17,21 @@ export default function HeroSection() {
   return (
 <section className="min-h-screen flex items-center justify-center pt-16">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between flex-col lg:flex-row">
+    <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
+      {/* Profile Image */}
+      <div className="lg:w-1/3 mt-12 lg:mt-0 flex justify-center order-last lg:order-first">
+        <div className="relative">
+          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border border-gray-700/50 relative overflow-hidden group" data-testid="profile-image">
+            <img 
+              src={meImage}
+              alt="Amit Prakash - Java Backend Developer"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 rounded-full border border-gray-600/0 group-hover:border-gray-600/40 transition-colors duration-300"></div>
+          </div>
+        </div>
+      </div>
+
       {/* Text and Buttons */}
       <div className="lg:w-2/3">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6" data-testid="hero-title">
@@ -60,20 +74,6 @@ export default function HeroSection() {
             <Mail className="w-4 h-4 mr-2" />
             Get In Touch
           </button>
-        </div>
-      </div>
-
-      {/* Profile Image */}
-      <div className="lg:w-1/3 mt-12 lg:mt-0 flex justify-center">
-        <div className="relative">
-          <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full border border-gray-700/50 relative overflow-hidden group" data-testid="profile-image">
-            <img 
-              src={meImage}
-              alt="Amit Prakash - Java Backend Developer"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 rounded-full border border-gray-600/0 group-hover:border-gray-600/40 transition-colors duration-300"></div>
-          </div>
         </div>
       </div>
     </div>
