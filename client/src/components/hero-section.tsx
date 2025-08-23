@@ -46,35 +46,38 @@ export default function HeroSection() {
           Passionate about performance, security, and maintainability.<br />
           I’m driven by innovative projects in cloud-native solutions and AI integration.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center sm:items-center lg:items-start">
-          <button
-            onClick={() => scrollToSection("experience")}
-            className="gradient-border inline-flex items-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
-            data-testid="button-view-work"
-          >
-            <Briefcase className="w-4 h-4 mr-2" />
-            My Experience
-          </button>
-          <a
-            href="https://drive.google.com/file/d/1rzXy92IuN8E0JtZa_7r5tasCvCxm41as/view?usp=drive_link"
-            download="Amit_Prakash_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="gradient-border inline-flex items-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
-            data-testid="button-download-resume"
-          >
-            <Download className="w-4 h-4 mr-2" />
-            Download Resume
-          </a>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="gradient-border inline-flex items-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
-            data-testid="button-contact"
-          >
-            <Mail className="w-4 h-4 mr-2" />
-            Get In Touch
-          </button>
-        </div>
+
+<div className="flex flex-col sm:flex-row gap-4 justify-center items-center lg:items-start">
+  <button
+    onClick={() => scrollToSection("experience")}
+    className="gradient-border inline-flex items-center justify-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
+    data-testid="button-view-work"
+  >
+    <Briefcase className="w-4 h-4 mr-2" />
+    My Experience
+  </button>
+  <a
+    href="https://drive.google.com/file/d/1rzXy92IuN8E0JtZa_7r5tasCvCxm41as/view?usp=drive_link"
+    download="Amit_Prakash_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="gradient-border inline-flex items-center justify-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
+    data-testid="button-download-resume"
+  >
+    <Download className="w-4 h-4 mr-2" />
+    Download Resume
+  </a>
+  <button
+    onClick={() => scrollToSection("contact")}
+    className="gradient-border inline-flex items-center justify-center px-6 py-3 text-gray-300 hover:text-white text-sm font-medium rounded-lg transition-colors duration-200 whitespace-nowrap"
+    data-testid="button-contact"
+  >
+    <Mail className="w-4 h-4 mr-2" />
+    Get In Touch
+  </button>
+</div>
+
+
       </div>
     </div>
   </div>
