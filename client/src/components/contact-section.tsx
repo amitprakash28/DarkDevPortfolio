@@ -54,9 +54,9 @@ export default function ContactSection() {
             {contactInfo.map((contact, index) => {
               const IconComponent = contact.icon;
               const content = (
-                <div className="bg-dark-primary rounded-xl p-8 text-center card-hover border border-dark-border" data-testid={`contact-${contact.value.toLowerCase()}`}>
-                  <div className={`w-16 h-16 ${contact.bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <IconComponent className={`${contact.color} w-8 h-8`} />
+               <div className="bg-dark-primary rounded-xl p-6 text-center card-hover border border-dark-border" data-testid={`contact-${contact.value.toLowerCase()}`}>
+                  <div className={`w-12 h-12 ${contact.bgColor} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                    <IconComponent className={`${contact.color} w-6 h-6`} />
                   </div>
                   <p className={`text-gray-400 ${contact.href ? `hover:${contact.color} transition-colors` : ""}`} data-testid={`contact-${contact.value.toLowerCase()}-value`}>
                     {contact.value}
