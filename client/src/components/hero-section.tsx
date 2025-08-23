@@ -36,7 +36,7 @@ export default function HeroSection() {
                 data-testid="button-view-work"
               >
                 <Briefcase className="w-4 h-4 mr-2" />
-                View My Work
+                My Experience
               </button>
               <a
                 href="https://drive.google.com/file/d/1rzXy92IuN8E0JtZa_7r5tasCvCxm41as/view?usp=drive_link"
