@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("hero");  // Set default active section to 'hero'
 
   useEffect(() => {
     const handleScroll = () => {
