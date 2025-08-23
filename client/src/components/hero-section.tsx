@@ -26,9 +26,8 @@ export default function HeroSection() {
               Java Backend Developer
             </h2>
             <p className="text-lg text-gray-400 mb-8 max-w-2xl" data-testid="hero-description">
-              Nearly 3 years of experience building scalable microservices using Spring Boot. 
-              Passionate about creating robust backend systems for global products, including 
-              Agentic AI, with a strong focus on security, performance, and maintainability.
+              Java Backend Developer with nearly 3 years of experience crafting scalable microservices using Spring Boot. Currently at WhiteSwan Security, I specialize in building secure, high-performance backend systems for global products, including Agentic AI. Passionate about performance, security, and maintainability. 
+              I’m driven by innovative projects in cloud-native solutions and AI integration
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
