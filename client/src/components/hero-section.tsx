@@ -25,7 +25,7 @@ export default function HeroSection() {
             <h2 className="text-xl sm:text-2xl text-gray-300 mb-6 font-medium" data-testid="hero-subtitle">
               Java Backend Developer
             </h2>
-            <p className="text-base text-gray-400 mb-8 max-w-2xl" data-testid="hero-description">
+            <p className="text-base text-gray-400 mb-8 max-w-2xl leading-6" data-testid="hero-description">
                 Java Backend Developer with nearly 3 years of experience crafting scalable microservices using Spring Boot.<br />
                 Currently at WhiteSwan Security, I specialize in building secure, high-performance backend systems for global products, including Agentic AI.<br />
                 Passionate about performance, security, and maintainability.<br />
