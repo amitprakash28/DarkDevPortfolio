@@ -32,7 +32,7 @@ export default function ExperienceSection() {
       title: "Associate Software Engineer",
       company: "Twinleaves Retail E-commerce Private Limited",
       companyUrl: "https://www.twinleaves.co/",
-      location: "Sydney, Australia (Onsite)",
+      location: "Bangalore, India (Onsite)",
       period: "Nov 2022 – March 2024",
       current: false,
       achievements: [
