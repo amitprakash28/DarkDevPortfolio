@@ -15,7 +15,7 @@ export default function HeroSection() {
   };
 
   return (
-<section className="min-h-screen flex items-center justify-center pt-16">
+<section id="hero" className="min-h-screen flex items-center justify-center pt-16">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center lg:text-left lg:flex lg:items-center lg:justify-between flex-col-reverse lg:flex-row">
       {/* Profile Image */}

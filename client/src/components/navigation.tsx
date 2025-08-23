@@ -3,27 +3,35 @@ import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");  // Set default active section to 'hero'
+  const [activeSection, setActiveSection] = useState("hero"); // default to hero
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["hero", "skills", "experience", "education", "contact"];
       const scrollY = window.pageYOffset;
 
-      sections.forEach(sectionId => {
+      let currentSection = "hero"; // default section
+
+      sections.forEach((sectionId) => {
         const section = document.getElementById(sectionId);
         if (section) {
           const sectionTop = section.offsetTop - 100;
           const sectionHeight = section.offsetHeight;
-          
+
           if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            setActiveSection(sectionId);
+            currentSection = sectionId;
           }
         }
       });
+
+      setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll);
+
+    // Call on mount to set the default active section
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -33,7 +41,7 @@ export default function Navigation() {
       const offsetTop = section.offsetTop - 80;
       window.scrollTo({
         top: offsetTop,
-        behavior: "smooth"
+        behavior: "smooth",
       });
     }
     setIsMobileMenuOpen(false);
@@ -53,7 +61,9 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold gradient-text" data-testid="logo">Amit Prakash</span>
+            <span className="text-xl font-bold gradient-text" data-testid="logo">
+              Amit Prakash
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -81,11 +91,7 @@ export default function Navigation() {
               className="text-gray-400 hover:text-white focus:outline-none"
               data-testid="mobile-menu-button"
             >
-              {isMobileMenuOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -93,7 +99,10 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed top-16 left-0 w-full h-full bg-dark-primary/95 backdrop-blur-sm z-40 mobile-menu-fade" data-testid="mobile-menu">
+        <div
+          className="md:hidden fixed top-16 left-0 w-full h-full bg-dark-primary/95 backdrop-blur-sm z-40 mobile-menu-fade"
+          data-testid="mobile-menu"
+        >
           <div className="px-6 pt-8 pb-6">
             <div className="bg-dark-secondary rounded-xl border border-dark-border p-6 mx-auto max-w-sm mobile-menu-fade">
               <div className="space-y-4">
